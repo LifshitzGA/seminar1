@@ -14,9 +14,6 @@ eq = pd.read_csv("Earthquake-database.csv")
 d = pd.Index.value_counts(eq["INTENSITY"])
 c = pd.Index.value_counts(eq["YEAR"])
 
-print (c)
-
-
 fig, axes = plt.subplots()
 plt.bar(d.index, d)
 plt.ylabel('Количество землятресений')
